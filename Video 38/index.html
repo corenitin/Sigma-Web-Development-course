@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flexboxes</title>
+    <style>
+        .container {
+            
+            border: 2px solid red;
+            display: flex;
+            height: 60vh;
+            /* justify-content: center; */
+            align-items: center;
+            /* align-content: flex-start; */
+            /* flex-direction: column-reverse; */
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+            gap: 20px;
+            /* row-gap: 20px;
+            column-gap: 20px; */
+            gap: 20px 20px;
+        }
+
+        .item {
+            /* flex-grow: 1; */
+            height: 42px;
+            width: 42px;
+            background-color: rgb(132, 0, 255);
+            border: 2px solid black;
+            /* margin: 6px; */
+        }
+        .item1{
+            align-self:flex-end;
+            /* flex-grow: 2; */
+        }
+
+        .order-1{
+            order:1;
+        }
+        .order-2{
+            order:2;
+        }
+        .order-3{
+            order:3;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+          <div class="item item1">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item order-1">4</div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <!-- <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div> -->
+         
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media querys</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+
+        @media screen and (orientation:portrait) {
+            body{
+                border: 2px solid rgb(242, 130, 50);
+            }
+            
+        }
+        @media only screen and (max-width:255px){
+            body{
+                background-color: brown;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+            
+        }
+
+        .boxes{
+            display: flex;
+        }
+
+        .box{
+            width: 144px;
+            height: 144px;
+            background-color: antiquewhite;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        I am media guy.
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
